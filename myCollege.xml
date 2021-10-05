@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="16.0.1" class="java.beans.XMLDecoder">
+ <object class="com.luv2code.serializationXml.College">
+  <void property="students">
+   <object class="java.util.ArrayList">
+    <void method="add">
+     <object class="com.luv2code.serializationXml.Student">
+      <void property="rollno">
+       <int>101</int>
+      </void>
+      <void property="sname">
+       <string>Mangesh</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.luv2code.serializationXml.Student">
+      <void property="rollno">
+       <int>102</int>
+      </void>
+      <void property="sname">
+       <string>Ravi</string>
+      </void>
+     </object>
+    </void>
+   </object>
+  </void>
+ </object>
+</java>
