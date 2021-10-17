@@ -7,10 +7,10 @@ public class PredicateJoining {
 	public static void main(String[] args) {
 		
 		Predicate<String> checkLength = s -> s.length() >= 5;
-		System.out.println("the length of string is greater than 5 :" + checkLength.test("code decode"));
+//		System.out.println("the length of string is greater than 5 :" + checkLength.test("code decode"));
 		
 		Predicate<String> checkEvenLength = s -> s.length() % 2 == 0;
-		System.out.println("the length of string is even :" + checkEvenLength.test("code decode"));
+//		System.out.println("the length of string is even :" + checkEvenLength.test("code decode"));
 		
 		//it can be joined with AND
 		System.out.println("after merging with and " + checkLength.and(checkEvenLength).test("code decode"));

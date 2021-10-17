@@ -28,11 +28,10 @@ public class CollectDemo {
 
 		// what we have to do
 		// .1)Open stream with .stream()
-		// 2) use lambda expression in filter to filter the required objects from the
-		// stream
+		// 2) use lambda expression in filter to filter the required objects from the stream
 		// 3)collect all filtered elements and add them to a List called newFileterfList
 
-		List<Integer> newfiletredStream = arList.stream().filter(i -> i >= 20).collect(Collectors.toList());
+		List<Integer> newfiletredStream = arList.stream().filter(i ->i >= 20).collect(Collectors.toList());
 		newfiletredStream.forEach(x -> System.out.println(x));
 
 	}

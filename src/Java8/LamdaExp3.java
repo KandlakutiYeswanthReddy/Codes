@@ -10,14 +10,14 @@ public class LamdaExp3 {
 
 		// using Lambda Expression
 
-		BiConsumer<Integer, Integer> biConsumer = (a, b) -> System.out.println(a + b);
-		biConsumer.accept(2, 5);
+//		BiConsumer<Integer, Integer> biConsumer = (a, b) -> System.out.println(a + b);
+//		biConsumer.accept(2, 5);
 
 		// Emp -2
 
-//		List<Integer> values = Arrays.asList(1, 2, 3, 4, 5, 6);
-//
-//		values.forEach(i -> System.out.println(i));
+		List<Integer> values = Arrays.asList(1, 2, 3, 4, 5, 6);
+
+		values.forEach(i -> System.out.println(i));
 
 		// normal way
 

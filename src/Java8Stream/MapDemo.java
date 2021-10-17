@@ -2,6 +2,7 @@ package Java8Stream;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class MapDemo {
@@ -17,10 +18,14 @@ public class MapDemo {
 //		Stream s = arList.stream().map(i -> 2 * i);
 //		s.forEach(x -> System.out.println(x));
 		
-		arList.stream()   							//creation of stream
-			.map(i -> 2 * i)							// configuration of stream
-			.forEach(x -> System.out.println(x));		// processing of stream
+		List<Integer> list = arList.stream()   							//creation of stream
+			  .map(i -> 2 * i).collect(Collectors.toList());							// configuration of stream
+		list.forEach(x -> System.out.println(x));		// processing of stream
 
+		arList.stream()   							//creation of stream
+		      .map(i -> 2 * i)
+		      .forEach(x -> System.out.println(x));
+		
 	}
 
 }

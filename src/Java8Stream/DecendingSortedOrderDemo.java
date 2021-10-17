@@ -17,7 +17,7 @@ public class DecendingSortedOrderDemo {
 		// get stream object
 		Stream<Integer> openStream = arList.stream();
 
-		// configure stream by filteringout required values
+		// configure stream by filtering out required values
 		Stream<Integer> filetredStream = openStream.filter(i -> i >= 20);
 
 		Stream<Integer> sortedStream = filetredStream.sorted((i1, i2) -> i1.compareTo(i2));

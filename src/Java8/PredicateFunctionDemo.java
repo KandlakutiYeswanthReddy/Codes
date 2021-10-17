@@ -12,7 +12,7 @@ public class PredicateFunctionDemo {
 
 		// using predicate
 
-		Predicate<String> checkLength = s -> s.length() >= 5;
+		Predicate<String> checkLength = (s) -> s.length() >= 5;
 		System.out.println("the length of string is greater than 5 :" + checkLength.test("code decode"));
 
 		// function use
